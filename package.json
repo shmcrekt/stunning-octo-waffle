@@ -1,3 +1,4 @@
+// package.json
 {
   "name": "injection-molding-quoting-tool",
   "version": "1.0.0",
@@ -13,7 +14,9 @@
     "formidable": "^3.5.1",
     "lucide-react": "^0.395.0",
     "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react-dom": "^18.3.1",
+    "forge-apis": "^0.9.1", // Added for real Forge integration
+    "crypto": "^1.0.1" // Added for UUID generation (if using common node runtime)
   },
   "devDependencies": {
     "@types/react": "^18.3.3",
