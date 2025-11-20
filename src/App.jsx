@@ -1,3 +1,4 @@
+// src/App.jsx
 import React, { useState, useMemo, useEffect } from 'react';
 import { Upload, Sliders, DollarSign, Zap, AlertTriangle, Cpu, Globe, Save, Trash2, History } from 'lucide-react';
 import { initializeApp } from 'firebase/app';
@@ -635,7 +636,7 @@ const DetailedResultCard = ({ title, value, detail }) => (
                 <div className="bg-indigo-900/40 p-6 rounded-xl border border-indigo-700 text-center relative">
                     <button
                         onClick={saveCurrentQuote}
-                        disabled={!isAuthReady || !fileName || !firebaseConfig}
+                        disabled={!isAuthReady || !fileName}
                         className="absolute top-3 right-3 p-2 rounded-lg bg-indigo-700 hover:bg-indigo-600 disabled:bg-gray-600 disabled:cursor-not-allowed transition"
                         title="Save Quote to History"
                     >
